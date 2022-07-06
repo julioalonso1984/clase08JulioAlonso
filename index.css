@@ -1,8 +1,9 @@
 header {
-    background-color: blue;
+    background-color: rgb(27, 26, 26);
+    color: white;
     text-align: center;
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 .totales p {
     text-align: right;

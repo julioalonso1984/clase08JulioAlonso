@@ -96,16 +96,12 @@ if ((opcion == "si" || opcion == "SI" || opcion == "Si")) {
     productos.push(new Producto(calefactor1, precioCalefactor1, precioCalefactorIVA1, precioCalefactorConIVA1))
     productos.push(new Producto(total, totalIindividual, totalIVA, totalConIVA))
 
-    
-
-
-
-
-    console.log(productos)
+    const resultado = productos.filter((el) => el.precioVenta > 0)
+    console.log(resultado)
 
 
     function agregarProductosTabla() {
-        productos.forEach((producto) => {
+        resultado.forEach((producto) => {
             let filaTabla = document.createElement("tr")
             filaTabla.innerHTML = `
         <td>${producto.nombre}</td>
